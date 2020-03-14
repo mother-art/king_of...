@@ -1,0 +1,10 @@
+@mixin king-text() {
+  color: gold;
+  text-shadow: 0 0 1px white;
+}
+
+@mixin display-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

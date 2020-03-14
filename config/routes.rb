@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root to: "titles#index"
+  devise_for :users
+  root "titles#index"
   
-  resources :titles, only: [:index]
+  resources :users
+  resources :titles, only: [:index, :new, :create]
 end

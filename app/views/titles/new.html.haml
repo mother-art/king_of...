@@ -1,0 +1,8 @@
+= render 'layouts/header'
+
+.title-new
+  .title-new__box
+    %p ランキングタイトルを入力
+    = form_for @title do |f|
+      = f.text_field :name, placeholder: " 例）女子ウケするブランドランキング"
+      = f.submit "ランキング作成", class: "new_title__submit"
